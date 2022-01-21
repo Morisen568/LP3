@@ -17,6 +17,7 @@
 </head>
 <body>
   <header id="header">
+    <div class="header_all">
     <nav id="js-nav">
       <div class="title">
         <h2>ABC商事</h2>
@@ -29,8 +30,10 @@
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
+  </div>
   </header>
   <main>
+
   <section class="topics">
     <h2 class="section_ttl">TOPICS</h2>
       <div class="topics_date">2021.1.01</div>
@@ -135,12 +138,45 @@
       <div class="accordion-item">
         <input class="accordion-check" id="accordion-1" checked="" type="checkbox">
         <label class="accordion-label" for="accordion-1">お見積もりも目安はいくらからでしょうか?</label>
+        <div class="accordion-box">内容によって変化いたしますのでまずはお問合せフォームよりご相談ください。</div>
+      </div>
+      <div class="accordion-item">
+        <input class="accordion-check" id="accordion-2" checked="" type="checkbox">
+        <label class="accordion-label" for="accordion-2">東京以外からの発注も可能でしょうか</label>
+        <div class="accordion-box">可能です。お気軽にご相談ください。</div>
+      </div>
+      <div class="accordion-item">
+        <input class="accordion-check" id="accordion-3" checked="" type="checkbox">
+        <label class="accordion-label" for="accordion-3">セミナーやイベントの企画を依頼したいのですが</label>
         <div class="accordion-box"></div>
+      </div>
+      <div class="accordion-item">
+        <input class="accordion-check" id="accordion-4" checked="" type="checkbox">
+        <label class="accordion-label" for="accordion-4">WEBを媒体とした記事制作は可能ですか?</label>
+        <div class="accordion-box">ご相談内容によっては可能です。まずはお気軽にお問合せフォームよりご相談ください。</div>
       </div>
     </div>
   </section>
   <section id="contact" class="contact">
     <h2 class="coantact_title">CONTACT</h2>
+    <form action="mail.php" class="contact_form" id="form" method="POST">
+    <div class="contact_box">
+      <label for="name" class="contact_form_ttl">会社名・部署名</label>
+      <input type="text" class="contact_form_box2" name="" required="required" placeholder="">
+    </div>
+    <div class="contact_box">
+      <label for="email" class="contact_form_ttl">メールアドレス</label>
+      <input type="email" class="contact_form_box2" name="" required="required">
+    </div>
+    <div class="contact_box">
+      <label for="name" class="contact_form_ttl">電話番号</label>
+      <input type="text" class="contact_form_box2" name="" required="required">
+    </div>
+    <div class="contact_box _area">
+      <label for="message" class="contact_form_ttl">お問い合わせ内容</label>
+      <textarea name="message" class="contact_txtarea" id="message" cols="30" rows="10" required="required" placeholder=""></textarea>
+    </div>
+    </form>
   </section>
 </main>
 <footer>
