@@ -31,13 +31,21 @@
       </ul>
     </nav>
   </div>
+  <p class="drawer"></p>
   </header>
   <main>
+  <section class="top"></section>
 
   <section class="topics">
-    <h2 class="section_ttl">TOPICS</h2>
-      <div class="topics_date">2021.1.01</div>
-      <div class="topics_ttl">株式会社ABC商事設立</div>
+    <div class="inner">
+      <h2 class="section_ttl">TOPICS</h2>
+      <ul class="topics_list">
+        <li>
+          <div class="topics_date">2021.1.01</div>
+          <div class="topics_ttl">株式会社ABC商事設立</div>
+        </li>
+      </ul>
+    </div>
   </section>
   <section id="vision" class="vision">
     <div class="vision_wrap">
@@ -48,51 +56,56 @@
         <h2 class="vision_title">VISION</h2>
           <h4 class="vision_ttl">わたしたちは、革新事業の提供により、<br>
           世界的課題の可決に貢献します。</h4>
+          <div class="vision_line"></div>
           <p class="vision_txt">わたしたちは新しい価値の創造を通じて社会に貢献します。</p>
           <p class="vision_txt">わたしたちは、確信技術、先端材料の提供により、世界的課題の解決に貢献します。</p>
       </div>
     </div>
   </section>
+
   <section id="service" class="service">
     <h2 class="service_title">SERVICE</h2>
     <div class="service_list">
+        <div class="service_background"></div>
       <div class="service_item">
-        <div class="service_right">
-          <img src="img/pic_02.jpg" alt="service画像">
-        </div>
         <div class="service_left">
           <p class="service_ttl">CONSULTING</p>
           <p class="service_ttl">コンサルティング事業</p>
           <p class="service_txt">経営・システム・デジタルマーケティングの目線でのコンサルティングを行います。</p>
-          <div class="btn">
-            <a href="#">MORE</a>
+          <div class="btn_box">
+            <a href="#" class="btn">MORE</a>
           </div>
         </div>
+        <div class="service_right">
+          <img src="img/pic_02.jpg" alt="service画像">
       </div>
-      <div class="service_item">
-        <div class="service_left">
+    </div>
+        <div class="service_background"></div>
+      <div class="service_item2">
+        <div class="service_left2">
           <img src="img/pic_03.jpg" alt="service画像">
         </div>
-        <div class="service_right">
+        <div class="service_right2">
             <p class="service_ttl">DEVELOPMENT</p>
             <p class="service_ttl">受託開発業</p>
             <p class="service_txt">プロジェクト/プロダクトマネージメントの支援を致します。</p>
-          <div class="btn">
-            <a href="#">MORE</a>
+          <div class="btn_box">
+            <a href="#" class="btn">MORE</a>
           </div>
         </div>
       </div>
+      <div class="service_background"></div>
       <div class="service_item">
-        <div class="service_right">
-          <img src="img/pic_04.jpg" alt="service画像">
-        </div>
       <div class="service_left">
           <p class="service_ttl">EDUCATION</p>
           <p class="service_ttl">教育事業</p>
           <p class="service_txt">新人エンジニアやデザイナーの教育、新人研修・プログラミング研修を徹底して行います。</p>
-          <div class="btn">
-            <a href="#">MORE</a>
+          <div class="btn_box">
+            <a href="#" class="btn">MORE</a>
           </div>
+        </div>
+        <div class="service_right">
+          <img src="img/pic_04.jpg" alt="service画像">
         </div>
       </div>
     </div>
@@ -100,65 +113,66 @@
   <section id="about" class="about">
     <h2 class="about_title">ABOUT</h2>
     <div class="about_all">
-      <div class="about_list">
+      <ul class="about_list">
         <div class="about_item">
           <p class="about_ttl">会社名</p>
           <p class="about_txt">株式会社ABC商事</p>
         </div>
-        <div class="about_item">
+        <li class="about_item">
           <p class="about_ttl">設立</p>
           <p class="about_txt">2021年1月</p>
-        </div>
-        <div class="about_item">
+        </li>
+        <li class="about_item">
           <p class="about_ttl">資本金</p>
           <p class="about_txt">1000万円</p>
-        </div>
-        <div class="about_item">
+        </li>
+        <li class="about_item">
           <p class="about_ttl">代表</p>
           <p class="about_txt">山田　太郎</p>
-        </div>
-        <div class="about_item">
+        </li>
+        <li class="about_item">
           <p class="about_ttl">所在地</p>
           <p class="about_txt">〒000-0000 東京都中央区1丁目1番1号</p>
-        </div>
-        <div class="about_item">
+      </li>
+        <li class="about_item">
           <p class="about_ttl">電話</p>
           <p class="about_txt">00-1234-5678</p>
-        </div>
-        <div class="about_item">
+      </li>
+        <li class="about_item">
           <p class="about_ttl">主要取引先</p>
           <p class="about_txt">XYZ商事<br>X&YCorporation<br>XYZ株式会社</p>
-        </div>
-      </div>
+      </li>
+      </ul>
     </div>
   </section>
   <section id="faq" class="faq">
     <h2 class="faq_title">FAQ</h2>
     <div class="accordion">
       <div class="accordion-item">
-        <input class="accordion-check" id="accordion-1" checked="" type="checkbox">
+        <input class="accordion-check" id="accordion-1"  type="checkbox">
         <label class="accordion-label" for="accordion-1">お見積もりも目安はいくらからでしょうか?</label>
         <div class="accordion-box">内容によって変化いたしますのでまずはお問合せフォームよりご相談ください。</div>
       </div>
       <div class="accordion-item">
-        <input class="accordion-check" id="accordion-2" checked="" type="checkbox">
+        <input class="accordion-check" id="accordion-2" type="checkbox">
         <label class="accordion-label" for="accordion-2">東京以外からの発注も可能でしょうか</label>
         <div class="accordion-box">可能です。お気軽にご相談ください。</div>
       </div>
       <div class="accordion-item">
-        <input class="accordion-check" id="accordion-3" checked="" type="checkbox">
+        <input class="accordion-check" id="accordion-3"  type="checkbox">
         <label class="accordion-label" for="accordion-3">セミナーやイベントの企画を依頼したいのですが</label>
         <div class="accordion-box"></div>
       </div>
       <div class="accordion-item">
-        <input class="accordion-check" id="accordion-4" checked="" type="checkbox">
+        <input class="accordion-check" id="accordion-4"  type="checkbox">
         <label class="accordion-label" for="accordion-4">WEBを媒体とした記事制作は可能ですか?</label>
         <div class="accordion-box">ご相談内容によっては可能です。まずはお気軽にお問合せフォームよりご相談ください。</div>
       </div>
     </div>
   </section>
   <section id="contact" class="contact">
-    <h2 class="coantact_title">CONTACT</h2>
+
+    <h2 class="contact_title">CONTACT</h2>
     <form action="mail.php" class="contact_form" id="form" method="POST">
     <div class="contact_box">
       <label for="name" class="contact_form_ttl">会社名・部署名</label>
@@ -175,6 +189,9 @@
     <div class="contact_box _area">
       <label for="message" class="contact_form_ttl">お問い合わせ内容</label>
       <textarea name="message" class="contact_txtarea" id="message" cols="30" rows="10" required="required" placeholder=""></textarea>
+    </div>
+    <div class="contact_box2">
+      <button class="contact_btn" type="submit">確認</button>
     </div>
     </form>
   </section>
