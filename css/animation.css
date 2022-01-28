@@ -1,0 +1,74 @@
+.fadeUp {
+  animation: fadeUpAnime 0.8s forwards;
+  opacity: 0;
+}
+
+.fadeLeft {
+  animation: fadeLeftAnime 0.8s forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.fadeRight {
+  animation: fadeRightAnime 0.8s forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.fadeUpTrigger, .fadeLeftTrigger, .fadeRightTrigger {
+  overflow: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeRoll {
+  animation: rollAnime1 0.8s forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+
+@keyframes rollAnime1 {
+  from {
+    opacity: 0;
+      transform: rotateY(-90deg);
+  }
+
+  to {
+  transform: rotateY(0deg);
+  opacity: 1;
+  }
+}
