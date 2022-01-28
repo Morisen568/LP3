@@ -1,3 +1,13 @@
+$(window).on('load',function(){
+  $("#splash-logo").delay(1500).fadeOut('slow');
+
+    $("#splash").delay(1500).fadeOut('slow',function(){
+  $('body').addClass('appear');
+    });
+    $('.splashbg').on('animationend', function() {
+    });
+});
+
 
 $(function(){
   $('.accordion-label').click(function(){
