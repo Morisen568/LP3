@@ -85,7 +85,8 @@ header ul li {
 
 .top h1 {
   position: absolute;
-  margin-top: 680px;
+  bottom: 28%;
+  margin-left: 0%;
   color: white;
   font-size: 40px;
   position: fixed;
