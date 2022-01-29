@@ -84,9 +84,8 @@ header ul li {
 }
 
 .top h1 {
-  position: absolute;
-  bottom: 28%;
-  margin-left: 0%;
+  position: relative;
+  top: 680px;
   color: white;
   font-size: 40px;
   position: fixed;
@@ -467,6 +466,18 @@ footer {
 
 .footer_txt small {
   font-size: 15px;
+}
+
+@media screen and (min-width: 2150px) {
+  .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 1910px;
+  }
 }
 
 @media screen and (max-width: 768px) {

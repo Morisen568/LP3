@@ -77,9 +77,8 @@ header {
   z-index: -99;
 
   h1 {
-    position: absolute;
-    bottom: 28%;
-    margin-left: 0%;
+    position: relative;
+    top: 680px;
     color: white;
     font-size: 40px;
     position: fixed;
@@ -477,6 +476,18 @@ footer {
     font-size: 15px;
   }
 
+}
+
+@media screen and (min-width: 2150px) {
+
+  .top{
+    display: flex;
+    justify-content: center;
+    padding-right: 1910px;
+  }
+
+  h1 {
+  }
 }
 
 @media screen and (max-width: 768px) {
