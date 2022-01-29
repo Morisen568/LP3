@@ -10,8 +10,10 @@ $(window).on('load',function(){
 
 
 $(function(){
-  $('.accordion-label').click(function(){
+  $('.accordion-label').click(function () {
+    $(".accordion-label").not(this).removeClass("open");
     $(this).siblings('.accordion-box').slideToggle();
+    $(this).toggleClass("open");
     $('.accordion-label').not($(this)).siblings('.accordion-box').slideUp();
   });
 });

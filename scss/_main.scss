@@ -345,6 +345,11 @@ header {
     content: "+";
   }
 
+  &-label.open::before {
+    content: "×";
+  }
+
+
   &-box {
     display: none;
     width: 94%;
@@ -359,9 +364,9 @@ header {
   }
 }
 
-.accordion-check:checked + .accordion-label:before {
-  content: "×";
-}
+// .accordion-check:checked + .accordion-label:before {
+  // content: "×";
+// }
 
 .contact {
   &_title {

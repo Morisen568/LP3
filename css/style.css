@@ -369,6 +369,10 @@ header ul li {
   content: "+";
 }
 
+.accordion-label.open::before {
+  content: "×";
+}
+
 .accordion-box {
   display: none;
   width: 94%;
@@ -380,10 +384,6 @@ header ul li {
   overflow: hidden;
   background-color: #f3f3f3;
   opacity: 1;
-}
-
-.accordion-check:checked + .accordion-label:before {
-  content: "×";
 }
 
 .contact_title {
